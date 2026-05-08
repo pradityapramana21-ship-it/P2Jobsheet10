@@ -35,11 +35,8 @@ class AntrianKRS23 {
             return;
         }
         System.out.println("Mahasiswa dipanggil:");
-        for (int i = 0; i < 2; i++) {
-            data[front].tampilData();
-            front++;
-            size--;
-            sudahProses++; } }
+        for (int j = 0; j < size - 1; j++) {
+    data[j] = data[j + 1]; } }
     void tampilSemua() {
         if (isEmpty()) {
             System.out.println("Antrian kosong");
